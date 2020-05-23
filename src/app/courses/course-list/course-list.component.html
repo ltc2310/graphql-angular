@@ -1,0 +1,26 @@
+<h2 class="display-4">Course List</h2>
+<table class="table">
+  <thead class="thead-light">
+    <th>Title</th>
+    <th>Author</th>
+    <th>Description</th>
+    <th>Topic</th>
+    <th>Url</th>
+    <th></th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let course of courses">
+      <td (click)="onEdit(course)">{{course.title}}</td>
+      <td (click)="onEdit(course)">{{course.author}}</td>
+      <td (click)="onEdit(course)">{{course.description}}</td>
+      <td (click)="onEdit(course)">{{course.topic}}</td>
+      <td (click)="onEdit(course)">{{course.url}}</td>
+      <td>
+        <a class="btn text-danger" (click)="onDelete(course.id)">
+          <i class="fa fa-trash">
+          </i>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
