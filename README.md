@@ -1,27 +1,55 @@
-# GraphqlAngular
+# Angular with graphql
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+How to integrate graphql into angular
 
-## Development server
+## Project structure
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```bash
+src
+   - app
+       - courses
+               - course
+                      - course component
+               - course-list
+                      - course-list component
+               - courses component
 
-## Code scaffolding
+       - shared
+               - course.model.ts
+               - course.service.ts
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+      - app component
+      - graphql.module.ts
+      - app.module.ts
+               
+```
 
-## Build
+## Installation
+### graphql server
+- Clone graphql-server [Here](https://github.com/ltc2310/graphql-server)
+- install package graphql server:
+```bash
+npm install
+```
+- start server
+```bash
+node server.js
+```
+### graphql client (angular)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- install package
 
-## Running unit tests
+```bash
+npm install
+```
+- start
+```bash
+ng serve
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Guideline
 
-## Running end-to-end tests
+- Follow docment [Here](https://codedeom.com/2020/05/23/su-dung-graphql-trong-angular-nhu-the-nao/)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Document
+[Graphql for angular](https://www.apollographql.com/docs/angular/)
